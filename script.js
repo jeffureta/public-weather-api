@@ -1,4 +1,8 @@
-$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=London,uk&units=imperial&APPID=91d1c3a6a26bf1ae9933621f408cb994",
+function getCity() {
+    return prompt("Where are you?", "");
+}
+
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+ getCity() +"&units=imperial&APPID=91d1c3a6a26bf1ae9933621f408cb994",
     (data) => {
 
         let weatherIconURL = "https://api.openweathermap.org/img/w/";
