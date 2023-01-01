@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+/* custom properties */
+:root {
+    --bg-color-lighter: #fcfbfc;
+    --bg-color-light: #e7decc;
+    --bg-color-dark: #c5c6d0;
+    --text-color: #070504;
+    --text-color-alt: #191970;
+    --border-color: #040406;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-lighter);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* grid-column: span 1; */
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: fixed;
+    top: 25%;
+    max-width: 80%;
+    max-height: auto;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 2%;
+    background-color: var(--bg-color-light);
+}
+
+.weather__icon {
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    width: 3em;
+    height: 3em;
+    background-color: var(--bg-color-dark);    
+}
+
+h1, h2, h3, p, a {color: var(--text-color);}
+
+a:hover {color: var(--text-color-alt)}
